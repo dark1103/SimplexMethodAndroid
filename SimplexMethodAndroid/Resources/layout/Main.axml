@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="142.5dp"
+        android:id="@+id/editText1"
+        android:layout_marginBottom="0.0dp"
+        android:hint="Введите матрицу(пробелы и переносы строк)" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="41.5dp"
+        android:id="@+id/linearLayout1"
+        android:layout_marginBottom="0.0dp">
+        <Button
+            android:id="@+id/MyButton"
+            android:text="Считать"
+            android:layout_width="195.5dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="&lt;"
+            android:id="@+id/Button_Prevous"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="&gt;"
+            android:id="@+id/Button_Next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Text_MatrixOutput"
+        android:layout_width="match_parent"
+        android:layout_height="178.5dp"
+        android:hint="Тут будут промежуточные решения" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="32.0dp"
+        android:id="@+id/Text_RootsOutput"
+        android:hint="Тут будут корни" />
+    <CheckBox
+        android:text="Сырой вывод"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Toggle_RawOutput" />
+    <CheckBox
+        android:text="Выводить целиком строку с корнями"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Toggle_FullRoots" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3">
+        <EditText
+            android:inputType="number"
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="300px"
+            android:hint="Ширина ячейки" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="194.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText3"
+            android:minWidth="300px"
+            android:hint="Знаки после запятой" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4">
+        <EditText
+            android:inputType="number"
+            android:layout_width="143.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText4"
+            android:minWidth="300px"
+            android:hint="Округление" />
+        <EditText
+            android:inputType="number"
+            android:layout_width="193.5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText5"
+            android:minWidth="300px"
+            android:hint="Округление корней" />
+    </LinearLayout>
+</LinearLayout>
